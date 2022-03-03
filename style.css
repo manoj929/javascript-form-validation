@@ -54,6 +54,11 @@ form > div > label {
   padding-left: 5px;
 }
 
+.error {
+  color: red;
+  font-size: 0.8rem;
+}
+
 form > button {
   font-size: 1.1rem;
   padding: 11px 30px;
