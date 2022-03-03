@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Sign-up</h2>
+    <div class="form-div">
+      <form action="#">
+        <div>
+          <label for="userName">User</label>
+          <input
+            type="text"
+            id="userName"
+            name="userName"
+            placeholder="eg: john"
+            required
+          />
+          <div class="error" id="nameErr"></div>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <div class="error" id="emailErr"></div>
+        </div>
+        <div>
+          <label for="country">Country</label>
+          <select name="country">
+            <option>Select</option>
+            <option value="Australia">Australia</option>
+            <option value="India">India</option>
+            <option value="United States">United States</option>
+            <option value="United Kingdom">United Kingdom</option>
+          </select>
+          <div class="error" id="countryErr"></div>
+        </div>
+        <div>
+          <label for="pincode">PinCode</label>
+          <input type="text" id="pincode" name="pincode" />
+          <div class="error" id="pinErr"></div>
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div>
+          <label for="confirm_password">Confirm Password</label>
+          <input
+            type="password"
+            id="confirm_password"
+            name="confirm_password"
+          />
+        </div>
+        <button type="submit" value="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="form.js"></script>
+  </body>
+</html>
