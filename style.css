@@ -50,6 +50,8 @@ select {
 form > div > label {
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
+  margin-bottom: 2px;
+  padding-left: 5px;
 }
 
 form > button {
